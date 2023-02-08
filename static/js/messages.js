@@ -49,17 +49,24 @@ function newMessage(message) {
     return false;
   }
 
-  const message_element = `
-    <div class="d-flex mb-4 replied">
-      <div class="msg_container_send">
-        ${message}
-        <span class="msg_time_send">8:55 AM, Today</span>
-      </div>
-      <div class="img_cont_msg">
-        <img src="#"></img>
-      </div>
-    </div>
-    `;
+  const now = new Date();
+  hour = now.getHours();
+  minute = now.getMinutes();
+  const to_del_info = {
+    time: "10:55 AM, Today",
+  };
+
+  let message_element = `
+            <div class="d-flex mb-4 replied">
+              <div class="msg_container_send">
+                ${message}
+                <span class="msg_time_send">${hour}:${minute}, Today</span>
+              </div>
+              <div class="img_cont_msg">
+                <img class="rounded-circle user_img_msg"></img>
+              </div>
+            </div>
+            `;
 
   message_body.append($(message_element));
   message_body.animate(

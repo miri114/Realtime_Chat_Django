@@ -177,7 +177,7 @@ html {
     margin-right: 20px;
 }
 
-.msg_cotainer {
+.msg_container {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
@@ -189,7 +189,7 @@ html {
     text-align: center;
 }
 
-.msg_cotainer_send {
+.msg_container_send {
     min-width: 70px;
     text-align: center;
     margin-top: auto;
